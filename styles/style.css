@@ -1,0 +1,410 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+
+html {
+  	font-size: 20px;
+  	font-family: 'Titillium Web', sans-serif;
+  	background: white;
+}
+
+main{
+	text-align:left;
+	padding-left: 10%;
+	padding-right:10%;
+	/*padding-top:1.5%;*/
+	padding-bottom: 1.5%;
+	margin-top: 0;
+	background-color: white;
+}
+
+
+h2{
+	font-size:30px;
+	background: linear-gradient(#FFF3DA, white);
+	background-color:#FFF3DA;
+	padding:7px;
+
+}
+
+h2.home:hover{
+	background: linear-gradient(#E6B243, white);
+	cursor: pointer;
+}
+
+
+header{
+	background: linear-gradient(#A8B8E6, white);
+	margin-top: 0;
+	height:50%;
+	width:100%;
+}
+
+body{
+	padding:0px;
+	margin-top:0px;
+	padding-top:60px;
+	padding-bottom:0;
+	margin-left:0;
+	margin-right: 0;
+	margin-bottom: 0;
+	/*border: 0px #39539B;*/
+
+}
+
+p{
+	margin:0;
+}
+
+p.godown:hover{
+	color:black;
+}
+
+p.godown{
+	font-size:30px;
+	color:#39539B;
+}
+
+
+.topnav {
+    background-color: #A8B8E6;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index:1;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a.tabs {
+    float: left;
+    line-height: 2;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a.tabs:hover:not(.active){
+	background-color:#39539B;
+	color:#A8B8E6;
+}
+
+div.extraNav a:hover:not(.active){
+	background-color:#FFF3DA;
+	color:#E6B243;
+}
+
+.topnav a.fa:hover{
+	background-color:#FFF3DA;
+	color:#E6B243;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #FFF3DA;
+    color: #E6B243;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float:left;
+    line-height: 2;
+}
+
+.topnav a.fa{
+	padding:20px;
+	font-size:22px;
+	width:25px;
+	text-align:center;
+	text-decoration:none;
+	background-color:#A8B8E6;
+	color:white;
+}
+
+
+
+@media screen and (max-width: 720px) {
+  .topnav a.fa:not(:first-child) {
+  	display: none;
+  }
+}
+
+
+/*photo gallery*/
+div.gallery{
+	margin:5px;
+	border: 2px solid #556EB3;
+	float: left;
+	width:270px;
+	height: 300px;
+	background: linear-gradient(white, white, #A8B8E6);
+
+}
+
+div.gallery:hover{
+	border:2px solid #000000;
+	opacity: 0.7;
+}
+
+div.gallery img{
+	width:100%;
+	height: auto;
+}
+
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content{
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+#caption{
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+.modal-content, #caption{
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom{
+	from{transform: scale(0)}
+	to {transform: scale(1)}
+}
+
+p.date, p.desc{
+	margin-bottom:5px;
+	margin:5px;
+	padding-top:5px;
+	text-align:center;
+	margin: auto;
+}
+
+
+.close{
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: grey;
+	font-size: 40px;
+	font-weight:bold;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+	color:#bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+	.modal-content{
+		width:100%;
+	}
+}
+
+
+/*BUTTON STYLE*/
+button.fa{
+	display:none;
+	position:fixed;
+	bottom:20px;
+	right:30px;
+	z-index: 99;
+	border:none;
+	outline: none;
+	cursor:pointer;
+	padding:15px;
+	border-radius: 10px;
+	background-color:#A8B8E6;
+	color:white;
+	opacity: .5;
+}
+
+a.francais{
+	position:fixed;
+	left:30px;
+	z-index:99;
+	bottom:20px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding:12px;
+	padding-left:13px;
+	padding-right:13px;
+	border-radius: 10px;
+	background-color: #A8B8E6;
+	color:white;
+	opacity: 0.5;
+	font-size: 18px;
+	text-decoration: none;
+}	
+
+
+button:hover{
+	background-color:#FFF3DA;
+	color:#E6B243;
+}
+
+a.francais:hover{
+	background-color:#FFF3DA;
+	color:#E6B243;
+}
+
+ul{
+	list-style: disc;
+}
+
+ul li{
+	padding-bottom: 12px;
+	font-size:17px;
+}
+
+
+footer p{
+	font-size:15px;
+	text-align: right;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding:0px;
+	/*text-shadow: 1px 1px 1px #556EB3*/
+}
+
+footer{
+	background-color: #A8B8E6;
+	bottom: 0;
+	padding-bottom:0;
+	margin-bottom:0;
+	width: 100%;
+	left:0;
+}
+
+footer p.first{
+	padding-top:20px;
+}
+
+
+footer p.last{
+	padding-bottom:20px;
+	padding-top:20px;
+}
+
+.column{
+	float:left;
+	width:200px;
+}
+
+
+.row:after{
+	content: "";
+	display:table;
+	clear:both;
+}
+
+
+@media screen and (max-width:600px){
+	.column{
+		width:100%;
+	}
+}
+
+.newGallery:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+a.githubLink:link{
+	color:black;
+}
+
+a.githubLink:visited{
+	color:#A8B8E6;
+}
+
+a.githubLink:hover{
+	color:#39539B;
+}
+
+
+
+.centered{
+	width: 100%;
+	padding-top:20px;
+	text-align:center;
+}
+
+.centered p{
+	margin:auto;
+}
+
+
+
+.hehe{
+	font-size:12px;
+	padding-left:20px;
+	padding-top:20px;
+}
+
+footer a.fa{
+	float:right;
+	padding:5px;
+	font-size:15px;
+	width:15px;
+	text-align:center;
+	text-decoration:none;
+	background-color:#A8B8E6;
+	color:black;
+
+}
+
+footer a.fa-book{
+	margin-right:10%;
+}
+
+footer a.fa:hover{
+	color:#39539B;
+}
+
+div.box{
+	max-width: 650px;
+	border:5px;
+	border-style:double;
+	border-color: #39539B;
+	margin:auto;
+	padding:30px;
+}
+
+
+.caption{
+	color:white;
+	margin-right: 25%;
+	margin-left:25%;
+	text-align: center;
+}

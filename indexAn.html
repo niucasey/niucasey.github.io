@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+  	<meta charset = "utf-8">
+  	<meta name = "author" content = "Casey Niu">
+  	<meta name = "description" content= "Personal portfolio of Casey Niu">
+  	<link rel="icon" type = "image/png" href = "images/niu.png">
+  	<link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   	<title> Casey Niu </title>
+   	<link href = "styles/style.css" rel="stylesheet" type="text/css">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+
+  </head>
+  <body>
+  <header>
+    <!--<svg width = "100" height = 400>
+      <rect width = 0 height = 400 style = "fill: #A8B8E6;"/>
+    </svg>-->
+     <div class = "centered">
+        <!--<img src = "images/profile.jpg">-->
+        <h1>hello,<br> my name is <br> <span style = "font-size: 60px;">Casey Niu.</span></h1>
+        <div class = "box">
+        <p>Welcome to my little slice of the internet! Feel free to look around.</p><br><p>I'm a second year computer science student at the University of Waterloo. I was born and raised in Saskatoon, Saskatchewan. I graduated high school with French immersion and now I'm always looking for ways to incorporate the French language in my life. And here's one now!</p>
+      </div>
+      <br>
+        <p class = "godown" style = "text-align:center;"><strong>&#8659;</strong></p>
+    </div>
+
+  	<div class = "topnav">
+  		<a class = "active" href = "indexAN.html">Home</a>
+  		<a class = "tabs" href="education.html"> Education</a>
+  		<a class = "tabs" href = "workExperience.html">Experience</a>
+  		<a class = "tabs" href = "awards.html">Awards</a>
+      <a href = "https://www.facebook.com/casey.niu" class = "fa fa-facebook"> </a>
+      <a href = "https://github.com/niucasey" class = "fa fa-github"></a>
+      <a href = "https://www.linkedin.com/in/casey-niu" class = "fa fa-linkedin"></a>
+      <a href = "mailto:clniu@edu.uwaterloo.ca" class = "fa fa-envelope-o"></a>
+      <a href = "resume.pdf" class = "fa fa-book"></a>
+    </div>
+  </header>
+
+
+ 	<main>
+    <br>
+    <br>
+    <br>
+    <p id = "message" style = "float: right;">explore some adventures of my life</p>
+    <h2 class = "home 2018title">2018:</h2>
+    <div class = "2018">
+      <div class = "gallery">
+      <a target = "_blank">
+        <img  id = "myimg0" alt = "Un merveilleux coucher de soleil! Nous avons essayé de notre mieux de le capturer avec nos pinceaux." src = "images/broadwayBridge.jpg" width = "300" height="200">
+      </a>
+      <p class = "date">27.04.18 Saskatoon, SK</p>
+      <p class = "desc">Peinture sous le pont</p>
+    </div>
+    <div class = "modal" id = "mymod0">
+      <span class = "close">&times</span>
+      <img class = "modal-content" id = "img0">
+      <div class = "caption" id = "cap0"></div>
+    </div>
+
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <div class = "cheer">
+        <img id = "myimg1" src = "images/cheer.jpg" 
+          alt = "Je suis extrèmement fière de ce que nous avons accompli comme équipe. Voici ma première performance et je dirai qu'elle a eu un succès."
+          width = "300" height = "200">
+      </div>
+      <div class = "cheer" style = "display: none;">
+        <img src = "images/cheer1.jpg" width = "300" height = "200">
+      </div>
+      <div class = "cheer" style = "display: none;">
+        <img src = "images/cheer2.jpg" width="300" height="200">
+      </div>
+    </a>
+    <p class = "date">18.03.18 Waterloo, ON </p>
+    <p class = "desc">Ne laisse pas tomber les filles!</p>
+  </div>
+  <div class = "modal" id = "mymod1">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img1">
+    <div class = "caption" id = "cap1"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img id = "myimg2" src = "images/saintPatricks.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">17.03.18 Waterloo, ON </p>
+    <p class = "desc">Cheezing, but freezing</p>
+  </div>
+  <div class = "modal" id = "mymod2">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img2">
+    <div class = "caption" id = "cap2"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank"> <!--onclick = "nextSlide(0, 'taylor')">-->
+      <div class = "taylor">
+        <img id = myimg3 src = "images/turtleTaylor.jpg" alt = "Mom neveu, Taylor. Bienvenue sur terre"
+      width = "300" height = "200">
+      </div>
+      <div class = "taylor" style="display: none;">
+        <img src="images/turtleTaylor1.jpg">
+      </div>
+    </a>
+    <p class = "date">12.03.18 Saskatoon, SK</p>
+    <p class = "desc">Turtle Taylor</p>
+  </div>
+  <div class = "modal" id = "mymod3">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img3">
+    <div class = "caption" id = "cap3"></div>
+  </div>
+
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img alt = "" id = "myimg4" src = "images/mathBall.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">09.02.18 Waterloo, ON</p>
+    <p class = "desc">"Silly pose"</p>
+  </div>
+  <div class = "modal" id = "mymod4">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img4">
+    <div class = "caption" id = "cap4"></div>
+  </div>
+
+
+    <div class = "newGallery"></div>
+  </div>
+
+
+  <h2 class = "home 2017title">2017:</h2>
+  <div class = "2017">
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img id = "myimg5" src = "images/toronto.jpg" alt = ""
+      width = "300" height = "200">
+    </a>
+    <p class = "date">02.09.17 Toronto, ON </p>
+    <p class = "desc">Goodbye praries!</p>
+  </div>
+  <div class = "modal" id = "mymod5">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img5">
+    <div class = "caption" id = "cap5"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img id = "myimg6" src = "images/cranberryFlats.jpg" alt = "hehehe"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">26.08.17 Cranberry Flats, SK</p>
+    <p class = "desc">Our last, last hurrah</p>
+  </div>
+  <div class = "modal" id = "mymod6">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img6">
+    <div class = "caption" id = "cap6"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=WTJSt4wP2ME">
+      <img src = "images/band.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">16.08.17 Saskatoon, SK</p>
+    <p class = "desc">Walter Murray Alumni Band</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=wuT1K7Hhua0">
+      <img src = "images/littleElbow.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">26.07.17 Little Elbow, AB</p>
+    <p class = "desc">Singing happily :)</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href="https://www.youtube.com/watch?v=DiEwJTOderQ">
+        <img src = "images/grad.jpg" width = "300" height = "200">
+    </a>
+    <p class = "date">28.07.17 Saskatoon, SK </p>
+    <p class = "desc">WE MADE IT!</p>
+  </div>
+
+  <div class = "gallery" >
+    <a target = "_blank">
+      <img alt = "" id = "myimg7" src = "images/recital.jpg" 
+      width = "300" height = "200">
+    </a>
+    <p class = "date">04.07.17 Saskatoon, SK </p>
+    <p class = "desc">Our last performance</p>
+  </div>
+  <div class = "modal" id = "mymod7">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img7">
+    <div class = "caption" id = "cap7"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=L_jWHffIx5E">
+      <div class = "prom">
+        <img src = "images/prom.jpg"  width = "300" height = "200">
+      </div>
+    </a>
+    <p class = "date">05.05.17 Saskatoon, SK</p>
+    <p class = "desc">Vimy Ridge Memorial Park</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=uJKfxtYAt0s">
+      <img src = "images/avignon.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">19.04.17 Avignon, France</p>
+    <p class = "desc">l'on y danse, tous en rond</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img id = "myimg8" src = "images/nice.jpg" alt = ""
+      width = "300" height = "200">
+    </a>
+    <p class = "date">16.04.17 Nice, France</p>
+    <p class = "desc"> Skipping rocks by the sea shore</p>
+  </div>
+  <div class = "modal" id = "mymod8">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img8">
+    <div class = "caption" id = "cap8"></div>
+  </div>
+
+  <div class = "gallery" >
+    <a target = "_blank">
+      <img alt = "" id = "myimg9" src = "images/berryBarn.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">11.04.17 just off Valley Road, SK</p>
+    <p class = "desc">Saskatoon berry waffles <3 </p>
+  </div>
+  <div class = "modal" id = "mymod9">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img9">
+    <div class = "caption" id = "cap9"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img alt = "" id = "myimg10" src = "images/banff.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">26.03.17 Banff, AB</p>
+    <p class = "desc">Concert band and sushi trains</p>
+  </div>
+  <div class = "modal" id = "mymod10">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img10">
+    <div class = "caption" id = "cap10"></div>
+  </div>
+
+
+    <div class = "newGallery"></div>
+  </div>
+
+
+  <h2 class = "home 2016title">2016:</h2>
+  <div class = "2016">
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=tbNlMtqrYS0">
+      <img src = "images/egg.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">23.10.16 Vegreville, AB</p>
+    <p class = "desc">Detour on prairie highways</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img src = "images/delaronde.jpg" alt = "" id = "myimg11"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">26.09.16 Saskatoon, SK</p>
+    <p class = "desc">My hometown</p>
+  </div>
+  <div class = "modal" id = "mymod11">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img11">
+    <div class = "caption" id = "cap11"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img alt = "" id = "myimg12" src = "images/cornMaze.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">04.09.16 just off Valley Road, SK</p>
+    <p class = "desc"></p>
+  </div>
+  <div class = "modal" id = "mymod12">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img12">
+    <div class = "caption" id = "cap12"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img alt = "" id = "myimg13" src = "images/plagePohenegamook.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date"><span style = "font-size:18px">23.07.16 Plage Pohénégamook, QC</span></p>
+  </div>
+  <div class = "modal" id = "mymod13">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img13">
+    <div class = "caption" id = "cap13"></div>
+  </div>
+
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img alt = "" id = "myimg14" src = "images/laPocatiere.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">20.07.16 La Pocatière, QC</p>
+    <p class = "desc">J'explore</p>
+  </div>
+  <div class = "modal" id = "mymod14">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img14">
+    <div class = "caption" id = "cap14"></div>
+  </div>
+
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=VHoT4N43jK8">
+      <img src = "images/dinkyPark.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">17.07.16 Québec, QC</p>
+    <p class = "desc">mmm... poutine</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=cUQyn1e_aNA">
+      <img src = "images/ottawa.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">15.06.16 Ottawa, ON</p>
+    <p class = "desc">WMCI Band | Music Fest Canada Gold</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=x7FD9PNpfpo">
+      <img src = "images/rideauCanal.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">14.06.16 Ottawa, ON</p>
+    <p class = "desc">Rideau Canal</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=1QZhJnDS3Vc">
+      <img src = "images/chineseNewYear.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">21.02.16 Saskatoon, SK</p>
+    <p class = "desc">Jasmine Flowers</p>
+  </div>
+
+
+  <div class = "newGallery"></div>
+  </div>
+
+  <h2 class = "home 2015title">2015:</h2>
+<div class = "2015">
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=oJI-r3SEyQg">
+      <img src = "images/flounder.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">20.11.15 Saskatoon, SK</p>
+    <p class = "desc">Wow! A dinglehopper!</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img alt = "" id = "myimg15" src = "images/sanFran.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">29.08.15 San Francisco, CA</p>
+    <p class = "desc">My tech dreams</p>
+  </div>
+  <div class = "modal" id = "mymod15">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img15">
+    <div class = "caption" id = "cap15"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=DuGGNsE3_8Y">
+      <img src = "images/hay.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">17.08.15 Somewhere without service, SK</p>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank">
+      <img alt = "" id = "myimg16" src = "images/cypress.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">16.08.15 Cypress Hills, SK</p>
+  </div>
+  <div class = "modal" id = "mymod16">
+    <span class = "close">&times</span>
+    <img class = "modal-content" id = "img16">
+    <div class = "caption" id = "cap16"></div>
+  </div>
+
+  <div class = "gallery">
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=iEKGJuIpP58">
+      <img src = "images/folkFest.jpg"
+      width = "300" height = "200">
+    </a>
+    <p class = "date">13.08.15 Saskatoon, SK</p>
+    <p class = "desc">Folk Festival | Ambassador dance in Mesopotamia</p>
+  </div>
+
+    <div class = "newGallery"></div>
+  </div>
+    <button class = "fa fa-arrow-up" id = "backToTop" type = "button"></button>
+    <a class = "francais" href = "index.html">FR</a>
+    </main>
+    <footer>
+      <br>
+      <p class = "first">Thanks for the visit, hope you enjoyed your stay :)</p>
+      <br>
+      <p>clniu@edu.uwaterloo.ca</p>
+      <p>306.491.6948</p>
+      <a href = "resume.pdf" class = "fa fa-book"></a>
+      <a href = "mailto:clniu@edu.uwaterloo.ca" class = "fa fa-envelope-o"></a>
+      <a href = "https://www.linkedin.com/in/casey-niu" class = "fa fa-linkedin"></a>
+      <a href = "https://github.com/niucasey" class = "fa fa-github"></a>
+      <a href = "https://www.facebook.com/casey.niu" class = "fa fa-facebook"> </a>
+      
+      
+
+
+      <br>
+      <p class = "last">&#169; 2018 | Casey Niu</p>
+    </footer> 
+  </body>
+</html>
